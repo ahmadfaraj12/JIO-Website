@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JIO website</title>
+    <link rel="icon" href="data:image/png;base64,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">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="nav">
+            <div class="nav-left">
+                <ul>
+                    <li id="logo"><img src="./logos.png" alt=""></li>
+                    <li><h4>Mobile</h4></li>
+                    <li><h4>True 5G</h4></li>
+                    <li><h4>Jio Fiber</h4></li>
+                    <li><h4>Airfiber</h4></li>
+                    <li><h4>Business</h4></li>
+                    <li><h4>Devices</h4></li>
+                    <li><h4>Apps</h4></li>
+                    <li><h4>Supports</h4></li>
+                </ul>
+
+            </div>
+            <div class="nav-right">
+                <img src="./logo search.png" alt="">
+                <img src="./logo user.png" alt="">
+                
+
+            </div>
+        </div>
+
+        <!-- nav baar end -->
+
+        
+
+        <!-- <img id="carrosel" src="./section-1 img.png" alt="" style="width: 100%;height: 400px;"> -->
+<div class="section-1">
+    <img src="./section-1 img.png" alt="">
+</div>
+        <!-- carossel end -->
+
+        <div class="recharge-section">
+            <span style="width:80%;">
+            <button id="btn1" >Mobile</button>
+            <button id="btn2">JioFiber</button>
+        </span>
+        <div class="cardd">
+            <div class="text">
+                <span style="display: flex; gap: 15px; font-size: 22px;font-weight: 100;">
+                <h5> ◯ Recharge </h5>
+                <h5>◯ Pay Bill</h5>
+            </span>
+
+            <span id="sp">
+                <label style="font-size: 12px;">Jio Mobile Number</label><br>
+                <input type="text">
+                <button>Rechacrge</button>
+                <div class="persent">
+                    <img src="./persentage.svg" alt="" style="width: 5%;" >
+                <h3>Recharge with a ₹2999 plan for a year full of digital  delights</h3>
+                </div>
+
+            </span>
+
+
+            </div>
+            <div class="imgage">
+            <img src="./mobile img.webp" alt="">
+            </div>
+
+        </div>
+
+        <div class="button-section">
+            <button>Get Jiofiber</button>
+            <button>Get Jiofiber</button>
+            <button>Get Jiofiber</button>
+            <button>Get Jiofiber</button>
+
+       
+        </div>
+    
+
+        </div>
+        <!-- recharge section end -->
+
+        <!-- herosection start -->
+
+        <div class="discover-section">
+            <h1>Discover the next big things</h1>
+            <div class="boxx-section">
+            <div class="card-1">
+                <button id="btn3">TRUE 5G</button>
+                <h2>Now in 7,764 <br>
+                    locations in India</h2>
+                    <button id="btn4">Check avebility</button>
+            </div>
+
+            <!-- 2 -->
+
+            <div class="card-2">
+                <button id="btn5">AIRFIBER</button>
+                <h2>Available across 5,846 <br>
+                    towns in India</h2>
+                    <button id="btn6">Know more</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- hero-section end -->
+
+    <!-- video section start -->
+
+    <div class="video-section">
+       
+        <h1>Connecting Bharat with JioBharat</h1>
+
+        <video style="border-radius: 20px;" loop autoplay muted width="60%" src="./bharat-welcome-page-tvc1.mp4"></video>
+        <button>Buy now</button>
+
+    </div>
+    <!-- video-section end -->
+
+    <div class="explore-section">
+        <h1>Explore the digital world with Jio</h1>
+        <p>Exciting shopping deals, a variety of entertainment and seamless digital experience.</p>
+        <div class="cardd1">
+            <span>
+                <img src="./red logo.png" alt="">
+                <h2>My Jio</h2>
+            </span>
+            <h1>One app for all your needs</h1>
+            <p style="color: black;">Recharge, shop, stream, pay and do so much more <br>
+                 on MyJio.</p>
+                 <button>Get MyJio</button>
+        </div>
+
+        <!-- 2 -->
+
+        <div class="cardd2">
+            <span>
+                <img style="width: 10%;" src="./remove savan.png" alt="">
+                <h2>Jio savan</h2>
+            </span>
+            <h1>Create your own <br> playlist for long <br> drive</h1>
+            <p style="color: white;">Jio savan has got songs foe all moods.</p>
+                 <button>Get jio savan</button>
+        </div>
+
+        <!-- 3 -->
+
+        <div class="cardd3">
+            <span>
+                <img src="./cenema.png" alt="">
+                <h2>jio cinema</h2>
+            </span>
+            <h1>Brings American OTT shows</h1>
+            <p >Popular shows from peacock Hub are already up. Enjoy watching!</p>
+                 <button>Get JioCinema</button>
+        </div>
+
+        <!-- 4 -->
+        <div class="cardd2">
+            <span>
+                <img src="./mart.png" alt="">
+                <h2>Jio mart</h2>
+            </span>
+            <h1>Enjoy awesome  <br> deals on daily needs</h1>
+            <p>Shop smart, save big on everyday <br> needs.</p>
+                 <button style="background: #0f78a5; color: white;">Explore now</button>
+        </div>
+
+        <!-- 5 -->
+
+        <div class="cardd2">
+            <span>
+                <img src="./games.png" alt="">
+                <h2>jio games</h2>
+            </span>
+            <h1>Experience gaming <br> without any limits!<h1>
+            <p>Dive into a world full of online games.</p>
+                 <button style="background-color: rgb(25, 92, 65); color: white;">Try jio games</button>
+        </div>
+        <!-- 6 -->
+
+        <div class="cardd2">
+            
+            <h1>Enrich your digital <br>life  with a host of Jio <br>apps<h1>
+            
+            <p>it's time you level up your digital <br> lifestyle</p>
+                 <button style="background-color: blue; color: white; width: 130px;">Try JioCinema</button>
+        </div>
+
+
+        
+    </div>
+
+    <!-- explore-section end -->
+
+    <!-- bestseller section start -->
+      <div class="best-sellers">
+        <h1>Get bestsellers at best prices</h1>
+        <div class="device-section">
+            <div class="device">
+                <h1>Devices</h1>
+                <p>Lorem, ipsum dolor sit amet <br>
+                 consectetur adipisicing elit <br>
+                  Itaque explicabo dolor veniam <br>
+                   at quas modi necessitatibus mos<br>
+                    quidem , voluptate deserunt qui, <br>
+                    
+
+                      <button>VIEW All Devices</button>
+            </div>
+
+            <div class="device-2">
+                <button>Trending</button>
+                <div class="im-sec">
+                <img src="./jiomotive-124.webp" alt="">
+            </div>
+                <h1>JioMotive</h1>
+                <span>
+                    <h4>5499 <del>11999</del></h4>
+                    <h4 style="color: #CD3D00;">Save 54%</h4>
+                </span>
+                <button>Buy from Jiomart</button>
+
+            </div>
+
+            <!-- 2 -->
+
+            <div class="device-2">
+                <button>Hot deal</button>
+                <div class="im-sec">
+                <img src="./jiodive-device.webp" alt="">
+            </div>
+                <h1>JioDrive</h1>
+                <span>
+                    <h4>5499 <del>11999</del></h4>
+                    <h4 style="color: #CD3D00;">Save 44%</h4>
+                </span>
+                <button>Buy from Jiomart</button>
+
+            </div>
+
+            <!-- 3 -->
+            <div class="device-2">
+                <!-- <button>Trending</button> -->
+                <div class="im-sec">
+                <img src="./JioBook.webp" alt="">
+            </div>
+                <h1>JioBook</h1>
+                <span>
+                    <h4>5499 <del>11999</del></h4>
+                    <h4 style="color: #CD3D00;">Save 38%</h4>
+                </span>
+                <button>Buy from Jiomart</button>
+
+            </div>
+        </div>
+      </div>
+
+      <!-- bestsellers end -->
+
+      <div class="great-section">
+        <div class="two-card-section">
+        <div class="cardtex">
+            <img src="./great.webp" alt="">
+            <h3> Reliance Jio Infocomm Ltd. has once again been recognised as a <br>
+                'Great Place To Work®'.</h3>
+                <button>view Job opening</button>
+        </div>
+        <!-- 2 -->
+
+        <div class="cardtex">
+            <img src="./jiostories-24.webp" alt="">
+            <h3> Reliance Jio Infocomm Ltd. has once again been recognised as a <br>
+                'Great Place To Work®'.</h3>
+                <button>view all Jio Stories</button>
+        </div>
+
+
+        </div>
+      </div>
+
+      <!-- aqwa section end -->
+
+      <!-- blue-sectionn start -->
+        <div class="blue-section">
+            <h1>Need guidance?</h1>
+            <h4>We would love to help you.</h4>
+            <span><button><i class="bi bi-chat-right"></i> support</button>
+                <button><i class="bi bi-chat-dots"></i> Chet with us</button>
+                <button><i class="bi bi-telephone"></i> call us</button>
+                <button><i class="bi bi-shop-window"></i> find a store</button></span>
+        </div>
+
+        <div class="footer-section">
+            <div class="footer">
+                <div class="left-footer">
+                    <ul>
+                        <li><h3>Our offerings</h3></li>
+                        <li><p>Prepaid</p></li>
+                        <li><p>Postpaid</p></li>
+                        <li><p>Port to Jio</p></li>
+                        <li><p>International roaming</p></li>
+                        <li><p>Apps</p></li>
+                        <li><p>esim</p></li>
+                        <li><p>WiFi calling</p></li>
+                        <li><p>Jio Tunes</p></li>
+                        <li><p>Devices</p></li>
+                        <li><p>Jio adds</p></li>
+                        <li><p>Jio books</p></li>
+                        <li><p>5G Network</p></li>
+                    </ul>
+
+                    <!-- 2 -->
+                    <ul>
+                    <li><h3>support</h3></li>
+                    <li><p>Track orders</p></li>
+                    <li><p>My accounts</p></li>
+                    <li><p>FAQ</p></li>
+                    <li><p>Locate us</p></li>
+                    <li><p>Lost sim</p></li>
+                    <li><p>Claim refund</p></li>
+                    <li><p>Reclam number</p></li>
+                    <li><p>Feedback</p></li>
+                    <li><p>Contact us</p></li>
+                </ul>
+
+                <!-- 3 -->
+
+                <ul>
+                    <li><h3>Our company</h3></li>
+                    <li><p>Reliance Industries</p></li>
+                    <li><p>Reliance Foundation</p></li>
+                    <li><p>JioLife</p></li>
+                    <li><p>Careers</p></li>
+                    <li><p>investor relations</p></li>
+                    </ul>
+
+                    <!-- 4 -->
+                    <ul>
+                        <li><h3>Useful links</h3></li>
+                        <li><p>Get Jio Sim</p></li>
+                        <li><p>Choice number</p></li>
+                        <li><p>Jioautopay</p></li>
+                        <li><p>Brand offers</p></li>
+                        <li><p>Partner with Jio</p></li>
+                        <li><p>Get JioAirFiber</p></li>
+                        <li><p>Sitemap</p></li>
+                    </ul>
+
+                </div>
+
+                <div class="right-footer">
+                    <h1>Connect with us</h1>
+                    <div class="circle-sec">
+                        <div class="circle">
+                            <i class="bi bi-instagram"></i>
+                        </div>
+                        <!-- 2 -->
+                        <div class="circle">
+                            <i class="bi bi-twitter-x"></i>
+                        </div>
+                        <!-- 3 -->
+                        <div class="circle">
+                            <i class="bi bi-facebook"></i>
+                        </div>
+                        <!-- 4 -->
+                        <div class="circle">
+                            <i class="bi bi-linkedin"></i>
+                        </div>
+                        <!-- 5 -->
+                        <div class="circle">
+                            <i class="bi bi-youtube"></i>
+                        </div>
+                    </div>
+                    <h2>Download MyJio</h2>
+                    <img src="./last google pay.png" alt="">
+
+
+                </div>
+            </div>
+
+        </div>
+        <!-- .footer section end -->
+        <hr>
+        <!-- mini footer start -->
+
+        <div class="mini-footer">
+            <div class="left-mini">
+                <img src="./logoo.png" alt="">
+                <p>Copyright © 2024 Reliance Jio Infocomm Ltd. All rights reserved.</p>
+            </div>
+
+            <div class="right-mini">
+                <span>
+                    <p>Press Release</p>
+                    <p>Regulatory</p>
+                    <p>Policies</p>
+                    <p>Terms and Condition</p>
+                </span>
+            </div>
+        </div>
+        </div>
+    
+</body>
+</html>
